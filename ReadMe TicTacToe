@@ -1,0 +1,13 @@
+checkwin()
+this function checks for all the scenarios for a win to occur and returns value accordingly.
+1 FOR GAME IS OVER WITH RESULT
+this occurs when we have 3 boxes with one symbol.
+-1 FOR GAME IS IN PROGRESS
+this occurs when not all the boxes are filled.
+O GAME IS OVER AND NO RESULT
+this occurs when all the boxes are filled and there are no 3 consecutive symbols of the same kind.
+
+the player chances are choses by a incrimenting player variable and for all the even outcomes the 2nd player plays thier turn.
+
+the square array keeps track of all the valus on the board
+
