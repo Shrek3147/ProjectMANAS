@@ -7,6 +7,12 @@ this occurs when not all the boxes are filled.
 O GAME IS OVER AND NO RESULT
 this occurs when all the boxes are filled and there are no 3 consecutive symbols of the same kind.
 
+board()
+this function draws the tictactoe grid.
+
+main()
+in this funtion the input symbol is taken and from both players and is added into the square array in the user defined position on a loop till th checkwin() returns a value to end the loop.
+
 the player chances are choses by a incrimenting player variable and for all the even outcomes the 2nd player plays thier turn.
 
 the square array keeps track of all the valus on the board
