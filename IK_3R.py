@@ -18,16 +18,16 @@ print(c2)
 s2_1 = math.sqrt(1- c2*c2)
     
 
-theta2_1 = math.atan2(s2_1, c2)#angle of 2nd angle by 1st method
+theta2_1 = math.atan2(s2_1, c2)
 
-denom_1 = a1*a1 + a2*a2 +2*a1*a2*math.cos(theta2_1)# denominator created for the calculation of the theta 1
-s1_1 =(wy*(a1 + a2*math.cos(theta2_1)) - a2*math.sin(theta2_1)*wx)/denom_1# finding the sin of theta1 of 1st method 
+denom_1 = a1*a1 + a2*a2 +2*a1*a2*math.cos(theta2_1)
+s1_1 =(wy*(a1 + a2*math.cos(theta2_1)) - a2*math.sin(theta2_1)*wx)/denom_1
 
-c1_1 = (wx*(a1+a2*math.cos(theta2_1)) + a2*math.sin(theta2_1)*wy)/denom_1# finding the cos of theta1 of 1st method 
+c1_1 = (wx*(a1+a2*math.cos(theta2_1)) + a2*math.sin(theta2_1)*wy)/denom_1
     
-theta1_1 = math.atan2(s1_1, c1_1) #first solution
+theta1_1 = math.atan2(s1_1, c1_1) 
 
-theta3_1 = phi - theta1_1 - theta2_1 #calulting the angle of theta3 by first method
+theta3_1 = phi - theta1_1 - theta2_1 
 
 
 
