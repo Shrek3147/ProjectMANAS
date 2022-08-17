@@ -22,7 +22,7 @@ int defen(int a[][5])/* The scoring function */
   sum+=max;
   return sum;/* Take the sum of the largest number as the score */
 }
-void jiemian(int a[][5])
+void gen(int a[][5])
 {
   int b[2]={2,4},c[5]={0,1,2,3,4},sum,n,m;
   do
@@ -215,7 +215,7 @@ outloop:;
   {
     while(flag==1)
     {
-      jiemian(a);
+      gen(a);
       c=getchar();
       printf("\n");
       yidong(c);
