@@ -5,11 +5,11 @@
 
 
 int i,j,a[5][5]={};/*2 Dimensional array a[5][5] For all 0*/
-void kaishi()/* Generate start interface */
+void ka()/* Generate start interface */
 {
   printf("Welcome to 2048\n");
-  printf("  1). A new game \n");
-  printf("  2). help \n");
+  printf(" press 1 for a new game \n");
+
 }
 int defen(int a[][5])/* The scoring function */
 {
@@ -208,7 +208,7 @@ int main(int argc,char *argv[])
   char c,k;
   system("stty -icanon");
 outloop:;
-  kaishi();
+  ka();
   k=getchar();
   printf("\n");
   if(k=='1')
