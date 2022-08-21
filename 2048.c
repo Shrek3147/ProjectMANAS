@@ -5,7 +5,7 @@
 
 
 int i,j,a[5][5]={};/*2 Dimensional array a[5][5] For all 0*/
-void ka()/* Generate start interface */
+void inter()/* Generate start interface */
 {
   printf("Welcome to 2048\n");
   printf(" press 1 for a new game \n");
@@ -58,7 +58,7 @@ void gen(int a[][5])
     printf("-------------------------\n");
     printf("      score :%d\n",sum=defen(a));
 }
-void hebingup(int a[][5])/* Up to merge */
+void up(int a[][5])/* Up to merge */
 {
   int m;
   for(j=0;j<5;j++)
@@ -78,7 +78,7 @@ void hebingup(int a[][5])/* Up to merge */
           /* Move the following Numbers up as a whole and recycle */
         }
 }
-void hebingdown(int a[][5])/* Merge down */
+void down(int a[][5])/* Merge down */
 {
   int m;
   for(j=0;j<5;j++)
@@ -97,7 +97,7 @@ void hebingdown(int a[][5])/* Merge down */
             }
         }
 }
-void hebingleft(int a[][5])/* To the left to merge */
+void left(int a[][5])/* To the left to merge */
 {
   int m;
   for(i=0;i<5;i++)
@@ -116,7 +116,7 @@ void hebingleft(int a[][5])/* To the left to merge */
             }
         }
 }
-void hebingright(int a[][5])/* Merge to the right */
+void right(int a[][5])/* Merge to the right */
 {
   int m;
   for(i=0;i<5;i++)
@@ -135,7 +135,7 @@ void hebingright(int a[][5])/* Merge to the right */
             }
         }
 }
-void yidong(char b)
+void c(char b)
 {
   int x,m;
   switch(b)
@@ -153,7 +153,7 @@ void yidong(char b)
               a[m][j]=0;
             }
           }
-      hebingup(a);
+      up(a);
       break;
     case 's' :
       for(j=0;j<5;j++)
@@ -168,7 +168,7 @@ void yidong(char b)
               a[m][j]=0;
             }
           }
-      hebingdown(a);
+      down(a);
       break;
     case 'a' :
       for(i=0;i<5;i++)
@@ -183,7 +183,7 @@ void yidong(char b)
               a[i][m]=0;
             }
           }
-      hebingleft(a);
+      left(a);
       break;
     case 'd' :
       for(i=0;i<5;i++)
@@ -198,7 +198,7 @@ void yidong(char b)
               a[i][m]=0;
             }
           }
-      hebingright(a);
+      right(a);
       break;
   }
 }
@@ -208,7 +208,7 @@ int main(int argc,char *argv[])
   char c,k;
   
 outloop:;
-  ka();
+  inter();
   k=getchar();
   printf("\n");
   if(k=='1')
