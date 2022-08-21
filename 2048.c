@@ -206,7 +206,7 @@ int main(int argc,char *argv[])
 {
   int flag=1;
   char c,k;
-  system("stty -icanon");
+  
 outloop:;
   ka();
   k=getchar();
